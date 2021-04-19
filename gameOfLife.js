@@ -154,7 +154,7 @@ function sideLeftCell(row, column, cellState) {
     return 0;
 }
 
-function evaluateNeighbours(row, column, cellState) {
+function checkNeigbors(row, column, cellState) {
     var count = 0;
     count += topLeftCell(row, column, cellState);
     count += topCell(row, column, cellState);
@@ -197,7 +197,7 @@ function generationCount(skipCount) {
         var row = parseInt(idSplit[1]);
         var column = parseInt(idSplit[2]);
 
-        var neighborCount = evaluateNeighbours(row, column, cellState);
+        var neighborCount = checkNeigbors(row, column, cellState);
         var background = td.style.background;
         if (background == 'black' && neighborCount < 2) {
             td.style.background = '#DCDCDC';
