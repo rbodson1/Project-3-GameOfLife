@@ -15,7 +15,7 @@
         <div class="grid" id="grid"></div>
 
         <div>
-            <h3 style="color:white" id="generationDisplay"></h3>
+            <h3 style="color:rgb(234, 243, 107)" id="generationDisplay"></h3>
 
         </div>
 
@@ -23,9 +23,7 @@
         <button class="button" onclick="stop()" tabindex="6">Stop</button>
         <button class="button" onclick="generationCount(1)" tabindex="1">Increment 1 Generation</button>
         <button class="button" onclick="generationCount(23)" tabindex="2">Increment 23 Generations</button>
-        <button class="button" onclick="reset()" tabindex="3">Reset</button>
-        <button class="button" onclick="randomPopulation()" tabindex="7">Random Population</button>
-        <br><br>
+        <button class="button" onclick="reset()" tabindex="3">Reset</button> <br><br>
         <select class="select" id="chooseGrid" tabindex="4" onChange="changeGridSize(this)">
             <option value="10" selected>Change Grid Size (Default is 10x10)</option>
             <option value="20">20x20 Grid Size</option>
