@@ -1,3 +1,10 @@
+/* 
+ To understand how the game work and how to implement certain features, we followed these references:
+ * https://javascript.plainenglish.io/the-game-of-life-using-javascript-fc1aaec8274f 
+ * https://spicyyoghurt.com/tutorials/javascript/conways-game-of-life-canvas
+ * https://www.youtube.com/watch?v=deXzu0Eregs
+*/
+
 var gridSize = 10;
 var generation = 0;
 var moving = false;
